@@ -39,6 +39,11 @@ const heroImages = [
 
 const destinations = [
   {
+    url: chikmangaloreImages.shriShankara,
+    title: 'Shri Shankara Matha',
+    subtitle: 'Breathtaking waterfalls'
+  },
+  {
     url: chikmangaloreImages.kudremukhPeak,
     title: 'Kudremukh Peak',
     subtitle: 'Breathtaking waterfalls'
@@ -58,11 +63,7 @@ const destinations = [
     title: 'Kalasa Waterfalls',
     subtitle: 'Breathtaking waterfalls'
   },
-  {
-    url: chikmangaloreImages.shriShankara,
-    title: 'Shri Shankara Matha',
-    subtitle: 'Breathtaking waterfalls'
-  },
+  
   {
     url: chikmangaloreImages.babaBudangiri,
     title: 'Baba Budangiri',
