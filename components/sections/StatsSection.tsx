@@ -105,7 +105,7 @@ function AnimatedCounter({
 
 export function StatsSection() {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section id="stats" className="relative py-20 overflow-hidden">
       {/* Background with Parallax Effect */}
       <div className="absolute inset-0">
         <div 

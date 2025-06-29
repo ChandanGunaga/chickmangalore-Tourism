@@ -117,7 +117,7 @@ export function GallerySection() {
   }
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section id="gallery" className="section-padding bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

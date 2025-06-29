@@ -98,7 +98,7 @@ export function FeaturedDestinations() {
   }
 
   return (
-    <section id="featured-destinations" className="section-padding bg-gray-50">
+    <section id="destinations" className="section-padding bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

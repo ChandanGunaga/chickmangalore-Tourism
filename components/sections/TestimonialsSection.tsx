@@ -114,7 +114,7 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+    <section id="testimonials" className="section-padding bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl" />

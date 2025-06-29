@@ -1,0 +1,81 @@
+{
+  "heroImages": [
+    {
+      "url": "https://images.unsplash.com/photo-1633437805600-2c58bf56663c?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Coffee Plantations",
+      "subtitle": "Walk through lush coffee estates and experience the aroma of Chikmangalore."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1526498716079-a8a720f2f87f?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Hebbe Falls",
+      "subtitle": "Marvel at the beauty of cascading waterfalls in the heart of nature."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Hebbe Falls",
+      "subtitle": "Marvel at the beauty of cascading waterfalls in the heart of nature."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1628497517516-af58a301f80d?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Hebbe Falls",
+      "subtitle": "Marvel at the beauty of cascading waterfalls in the heart of nature."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1723223347480-88a85ffafe29?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Hebbe Falls",
+      "subtitle": "Marvel at the beauty of cascading waterfalls in the heart of nature."
+    }
+  ],
+  "destinations": [
+    {
+      "url": "https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg",
+      "title": "Mullayanagiri Peak",
+      "subtitle": "Highest peak in Karnataka"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/56/3e/a3/hebbe-falls.jpg?w=1400&h=800&s=1",
+      "title": "Hebbe Falls",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1633437805600-2c58bf56663c?w=800&h=600&fit=crop",
+      "title": "Coffee Estates",
+      "subtitle": "Aromatic coffee plantations"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1",
+      "title": "Z Point",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3f/c1/ed/the-full-view.jpg?w=1600&h=-1&s=1",
+      "title": "Kudremukh Peak",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/07/d2/73/photo1jpg.jpg?w=1000&h=-1&s=1",
+      "title": "Kudremukh National Park",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/55/ec/7e/20160102-103625-largejpg.jpg?w=1000&h=800&s=1",
+      "title": "Bhadra Wildlife Sanctuary",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f4/e3/6e/madugundi-water-falls.jpg?w=1000&h=800&s=1",
+      "title": "Kalasa Waterfalls",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/5a/0c/de/few-snaps-in-sringeri.jpg?w=1000&h=-1&s=1",
+      "title": "Shri Shankara Matha",
+      "subtitle": "Breathtaking waterfalls"
+    },
+    {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/6d/00/ea/enroute-baba-budangiri.jpg?w=1000&h=-1&s=1",
+      "title": "Baba Budangiri",
+      "subtitle": "Breathtaking waterfalls"
+    }
+  ]
+} 

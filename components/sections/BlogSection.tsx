@@ -86,7 +86,7 @@ export function BlogSection() {
   const regularPosts = blogPosts.filter(post => !post.featured)
 
   return (
-    <section className="section-padding bg-white">
+    <section id="blog" className="section-padding bg-white">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

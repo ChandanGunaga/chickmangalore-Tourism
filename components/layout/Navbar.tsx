@@ -9,9 +9,9 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Destinations', href: '/destinations' },
   { name: 'Experiences', href: '/experiences' },
+  { name: 'Gallery', href: '/gallery' },
   { name: 'Blog', href: '/blog' },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Testimonials', href: '/testimonials' },
 ]
 
 export function Navbar() {
@@ -89,7 +89,7 @@ export function Navbar() {
                 </Link>
               ))}
               <button className="btn-primary">
-                Book Now
+                Contact Us
               </button>
             </div>
 
@@ -120,7 +120,7 @@ export function Navbar() {
                 ))}
                 <div className="px-6 pt-4">
                   <button className="w-full btn-primary">
-                    Book Now
+                    Contact Us
                   </button>
                 </div>
               </div>

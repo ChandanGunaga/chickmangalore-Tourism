@@ -53,7 +53,7 @@ export function ExperienceSection() {
   const currentExperience = experiences.find(exp => exp.id === activeExperience) || experiences[0]
 
   return (
-    <section className="section-padding bg-white">
+    <section id="experiences" className="section-padding bg-white">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -41,7 +41,7 @@ export function NewsletterSection() {
   }
 
   return (
-    <section className="section-padding bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
+    <section id="newsletter" className="section-padding bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Animated Background Circles */}
