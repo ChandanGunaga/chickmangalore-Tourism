@@ -1,85 +1,90 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Play, Search, Calendar, Users, MapPin, ArrowLeft, ArrowRight, Plus, Minus } from 'lucide-react';
+import { chikmangaloreImages } from '@/lib/image-config';
 
 const heroImages = [
   {
-    url: 'https://images.unsplash.com/photo-1633437805600-2c58bf56663c?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: chikmangaloreImages.coffeePlantations,
     title: 'Coffee Plantations',
     subtitle: 'Walk through lush coffee estates and experience the aroma of Chikmangalore.'
   },
   
   {
-    url: 'https://images.unsplash.com/photo-1526498716079-a8a720f2f87f?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: chikmangaloreImages.hebbeFalls,
     title: 'Hebbe Falls',
     subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: chikmangaloreImages.natureScenery,
     title: 'Hebbe Falls',
     subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1628497517516-af58a301f80d?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: chikmangaloreImages.mountainView,
     title: 'Hebbe Falls',
     subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1723223347480-88a85ffafe29?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: chikmangaloreImages.temple,
     title: 'Hebbe Falls',
     subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
   },
-  
+  {
+    url: chikmangaloreImages.coffeeBeans,
+    title: 'Hebbe Falls',
+    subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
+  },
 ];
 
 const destinations = [
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3f/c1/ed/the-full-view.jpg?w=1600&h=-1&s=1',
+    url: chikmangaloreImages.kudremukhPeak,
     title: 'Kudremukh Peak',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/07/d2/73/photo1jpg.jpg?w=1000&h=-1&s=1',
+    url: chikmangaloreImages.kudremukhPark,
     title: 'Kudremukh National Park',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/55/ec/7e/20160102-103625-largejpg.jpg?w=1000&h=800&s=1',
+    url: chikmangaloreImages.bhadraWildlife,
     title: 'Bhadra Wildlife Sanctuary',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f4/e3/6e/madugundi-water-falls.jpg?w=1000&h=800&s=1',
+    url: chikmangaloreImages.kalasaWaterfalls,
     title: 'Kalasa Waterfalls',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/5a/0c/de/few-snaps-in-sringeri.jpg?w=1000&h=-1&s=1',
+    url: chikmangaloreImages.shriShankara,
     title: 'Shri Shankara Matha',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/6d/00/ea/enroute-baba-budangiri.jpg?w=1000&h=-1&s=1',
+    url: chikmangaloreImages.babaBudangiri,
     title: 'Baba Budangiri',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg',
+    url: chikmangaloreImages.mullayanagiri,
     title: 'Mullayanagiri Peak',
     subtitle: 'Highest peak in Karnataka'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/56/3e/a3/hebbe-falls.jpg?w=1400&h=800&s=1',
+    url: chikmangaloreImages.hebbeFallsDest,
     title: 'Hebbe Falls',
     subtitle: 'Breathtaking waterfalls'
   },
   {
-    url: 'https://images.unsplash.com/photo-1633437805600-2c58bf56663c?w=800&h=600&fit=crop',
+    url: chikmangaloreImages.coffeeEstates,
     title: 'Coffee Estates',
     subtitle: 'Aromatic coffee plantations'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1',
+    url: chikmangaloreImages.zPoint,
     title: 'Z Point',
     subtitle: 'Breathtaking waterfalls'
   },
@@ -90,28 +95,28 @@ const destinations = [
 
 const trailCategories = [
   {
-    url: 'https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg',
+    url: chikmangaloreImages.mullayanagiri,
     title: 'Heritage Sites',
     description: 'Explore ancient temples and historical monuments'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/56/3e/a3/hebbe-falls.jpg?w=1400&h=800&s=1',
+    url: chikmangaloreImages.hebbeFallsDest,
     title: 'Adventure Sports',
     description: 'Trekking, rock climbing and water sports'
   },
   {
-    url: 'https://images.unsplash.com/photo-1633437805600-2c58bf56663c?w=800&h=600&fit=crop',
+    url: chikmangaloreImages.coffeeEstates,
     title: 'Nature Trails',
     description: 'Bird watching and wildlife photography',
     featured: true
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1',
+    url: chikmangaloreImages.zPoint,
     title: 'Cultural Heritage',
     description: 'Local traditions and cultural experiences'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3f/c1/ed/the-full-view.jpg?w=1600&h=-1&s=1',
+    url: chikmangaloreImages.kudremukhPeak,
     title: 'Hill Stations',
     description: 'Cool climate and scenic beauty'
   },
@@ -119,17 +124,17 @@ const trailCategories = [
 
 const accommodations = [
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/07/d2/73/photo1jpg.jpg?w=1000&h=-1&s=1',
+    url: chikmangaloreImages.kudremukhPark,
     title: 'Luxury Resorts',
     description: 'Premium stays with world-class amenities'
   },
   {
-    url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f4/e3/6e/madugundi-water-falls.jpg?w=1000&h=800&s=1',
+    url: chikmangaloreImages.kalasaWaterfalls,
     title: 'Heritage Hotels',
     description: 'Experience royal hospitality in historic settings'
   },
   {
-    url: 'https://images.unsplash.com/photo-1526498716079-a8a720f2f87f?q=80&w=2002&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    url: chikmangaloreImages.hebbeFalls,
     title: 'Home Stays',
     description: 'Local hospitality and authentic experiences'
   }
@@ -418,7 +423,7 @@ function TrailsSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={chikmangaloreImages.natureScenery}
           alt="Background"
           className="w-full h-full object-cover"
         />
@@ -477,7 +482,7 @@ function FestivalsSection() {
       name: "Coffee Festival",
       date: "January 15-20, 2025",
       description: "Celebrate the rich coffee heritage with plantation tours, tastings, and cultural performances",
-      image: "https://images.unsplash.com/photo-1633437805600-2c58bf56663c?w=800&h=600&fit=crop",
+      image: chikmangaloreImages.coffeePlantations,
       color: "from-amber-500 to-orange-600",
       icon: "☕",
       highlights: ["Coffee Tastings", "Plantation Tours", "Cultural Shows"]
@@ -486,7 +491,7 @@ function FestivalsSection() {
       name: "Monsoon Magic",
       date: "July 10-15, 2025", 
       description: "Experience the enchanting monsoon season with waterfall treks and nature walks",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/56/3e/a3/hebbe-falls.jpg?w=1400&h=800&s=1",
+      image: chikmangaloreImages.hebbeFalls,
       color: "from-blue-500 to-cyan-600",
       icon: "🌧️",
       highlights: ["Waterfall Treks", "Nature Walks", "Monsoon Photography"]
@@ -495,7 +500,7 @@ function FestivalsSection() {
       name: "Harvest Festival",
       date: "October 5-10, 2025",
       description: "Join the traditional harvest celebrations with folk dances and local cuisine",
-      image: "https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg",
+      image: chikmangaloreImages.mullayanagiri,
       color: "from-green-500 to-emerald-600",
       icon: "🌾",
       highlights: ["Folk Dances", "Local Cuisine", "Harvest Rituals"]
@@ -507,7 +512,7 @@ function FestivalsSection() {
       {/* Colorful Background */}
       <div className="absolute inset-0">
         <img
-          src="https://cdn.pixabay.com/photo/2016/11/18/13/53/festival-of-lights-1834690_1280.jpg"
+          src={chikmangaloreImages.festival}
           alt="Festival Background"
           className="w-full h-full object-cover"
         />
@@ -694,7 +699,7 @@ function ExploreSection() {
     District: {
       title: "Chikmangalore District",
       description: "A hill station in Karnataka known for its coffee plantations and the Western Ghats running through its center, offering spectacular views and rich biodiversity.",
-      image: "https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg",
+      image: chikmangaloreImages.mullayanagiri,
       stats: [
         { label: "Area", value: "7,201 km²" },
         { label: "Population", value: "1.1M+" },
@@ -705,7 +710,7 @@ function ExploreSection() {
     Zone: {
       title: "Tourism Zones",
       description: "Explore different zones of Chikmangalore, each offering unique experiences from adventure sports to spiritual retreats.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/56/3e/a3/hebbe-falls.jpg?w=1400&h=800&s=1",
+      image: chikmangaloreImages.hebbeFalls,
       stats: [
         { label: "Zones", value: "6" },
         { label: "Attractions", value: "50+" },
@@ -716,7 +721,7 @@ function ExploreSection() {
     Experience: {
       title: "Unique Experiences",
       description: "From coffee plantation tours to wildlife safaris, discover authentic experiences that showcase the true essence of Chikmangalore.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1",
+      image: chikmangaloreImages.zPoint,
       stats: [
         { label: "Experiences", value: "30+" },
         { label: "Duration", value: "1-7 days" },
@@ -733,7 +738,7 @@ function ExploreSection() {
       {/* Image Background */}
       <div className="absolute inset-0">
         <img
-          src="https://cdn.pixabay.com/photo/2021/06/25/23/27/forest-6364913_1280.jpg"
+          src={chikmangaloreImages.forest}
           alt="Explore Background"
           className="w-full h-full object-cover"
         />
@@ -863,9 +868,9 @@ function ExploreSection() {
             {/* Image Grid */}
             <div className="grid grid-cols-3 gap-4">
               {[
-                "https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg",
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/56/3e/a3/hebbe-falls.jpg?w=1400&h=800&s=1",
-                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1"
+                chikmangaloreImages.mullayanagiri,
+                chikmangaloreImages.hebbeFalls,
+                chikmangaloreImages.zPoint
               ].map((image, index) => (
                 <div key={index} className="relative group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   <img
@@ -892,7 +897,7 @@ function ExploreSection() {
                 
                 <div className="relative h-96 bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20">
                   <img
-                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/3f/c1/ed/the-full-view.jpg?w=1600&h=-1&s=1"
+                    src={chikmangaloreImages.kudremukhPeak}
                     alt="Interactive Map"
                     className="w-full h-full object-cover"
                   />
@@ -967,7 +972,7 @@ function TripPlannerSection() {
     <section className="py-20 relative">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1723223347480-88a85ffafe29?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={chikmangaloreImages.sunset}
           alt="Mountains"
           className="w-full h-full object-cover opacity-30"
         />
@@ -1027,42 +1032,42 @@ function AccommodationSection() {
 function BusinessSection() {
   const businessOpportunities = [
     {
-      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f4/e3/6e/madugundi-water-falls.jpg?w=1000&h=800&s=1',
+      url: chikmangaloreImages.kalasaWaterfalls,
       title: 'Investor Facilitation Kit',
       description: 'POLICY',
       icon: '📋',
       category: 'Investment'
     },
     {
-      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/5a/0c/de/few-snaps-in-sringeri.jpg?w=1000&h=-1&s=1',
+      url: chikmangaloreImages.shriShankara,
       title: 'Tender List',
       description: 'TENDER',
       icon: '🏗️',
       category: 'Infrastructure'
     },
     {
-      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/6d/00/ea/enroute-baba-budangiri.jpg?w=1000&h=-1&s=1',
+      url: chikmangaloreImages.babaBudangiri,
       title: 'Tourism Policy Karnataka',
       description: 'TOURISM POLICY KR',
       icon: '📜',
       category: 'Policy'
     },
     {
-      url: 'https://images.unsplash.com/photo-1633437805600-2c58bf56663c?w=800&h=600&fit=crop',
+      url: chikmangaloreImages.coffeeEstates,
       title: 'Eco-Tourism Ventures',
       description: 'ECO-TOURISM',
       icon: '🌿',
       category: 'Sustainability'
     },
     {
-      url: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1',
+      url: chikmangaloreImages.zPoint,
       title: 'Adventure Tourism Licenses',
       description: 'ADVENTURE',
       icon: '🏔️',
       category: 'Adventure'
     },
     {
-      url: 'https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg',
+      url: chikmangaloreImages.mullayanagiri,
       title: 'Heritage Site Management',
       description: 'HERITAGE',
       icon: '🏛️',
@@ -1083,7 +1088,7 @@ function BusinessSection() {
       {/* Image Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={chikmangaloreImages.natureScenery}
           alt="Business Background"
           className="w-full h-full object-cover"
         />
@@ -1217,7 +1222,7 @@ function NewsSection() {
       id: 1,
       title: "New Eco-Tourism Initiatives Launched",
       excerpt: "Chikmangalore introduces sustainable tourism projects focusing on coffee estate conservation and wildlife protection.",
-      image: "https://images.unsplash.com/photo-1628497517516-af58a301f80d?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: chikmangaloreImages.kudremukhPark,
       category: "Eco-Tourism",
       date: "Dec 15, 2024",
       readTime: "3 min read",
@@ -1228,7 +1233,7 @@ function NewsSection() {
       id: 2,
       title: "Festival Calendar 2025 Announced",
       excerpt: "Experience the rich cultural heritage through upcoming festivals including the Coffee Festival and Monsoon Magic celebrations.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/07/d2/73/photo1jpg.jpg?w=1000&h=-1&s=1",
+      image: chikmangaloreImages.festival,
       category: "Events",
       date: "Dec 12, 2024",
       readTime: "5 min read",
@@ -1239,7 +1244,7 @@ function NewsSection() {
       id: 3,
       title: "Infrastructure Development Updates",
       excerpt: "Major road connectivity improvements and new tourist facilities being developed across key destinations.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/f4/e3/6e/madugundi-water-falls.jpg?w=1000&h=800&s=1",
+      image: chikmangaloreImages.hebbeFalls,
       category: "Infrastructure",
       date: "Dec 10, 2024",
       readTime: "4 min read",
@@ -1250,7 +1255,7 @@ function NewsSection() {
       id: 4,
       title: "Heritage Site Conservation Program",
       excerpt: "New initiatives to preserve ancient temples and historical monuments in the region.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/5a/0c/de/few-snaps-in-sringeri.jpg?w=1000&h=-1&s=1",
+      image: chikmangaloreImages.temple,
       category: "Heritage",
       date: "Dec 8, 2024",
       readTime: "6 min read",
@@ -1261,7 +1266,7 @@ function NewsSection() {
       id: 5,
       title: "Adventure Tourism Expansion",
       excerpt: "New trekking trails and adventure sports facilities opening in the Western Ghats region.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/17/44/b2/z-point.jpg?w=1400&h=800&s=1",
+      image: chikmangaloreImages.zPoint,
       category: "Adventure",
       date: "Dec 5, 2024",
       readTime: "4 min read",
@@ -1272,7 +1277,7 @@ function NewsSection() {
       id: 6,
       title: "Digital Tourism Platform Launch",
       excerpt: "New mobile app and website features to enhance visitor experience and booking convenience.",
-      image: "https://karnatakatourism.org/wp-content/uploads/2020/06/chikmagalur3.jpg",
+      image: chikmangaloreImages.coffeeEstates,
       category: "Technology",
       date: "Dec 3, 2024",
       readTime: "3 min read",
@@ -1296,7 +1301,7 @@ function NewsSection() {
       {/* Image Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1628497517516-af58a301f80d?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={chikmangaloreImages.mountainView}
           alt="News Background"
           className="w-full h-full object-cover"
         />

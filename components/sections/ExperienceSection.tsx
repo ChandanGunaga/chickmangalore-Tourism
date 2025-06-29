@@ -1,19 +1,21 @@
 'use client'
 
+import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
-import { Mountain, Waves, Building2, Palette, Camera, ArrowRight } from 'lucide-react'
+import { Mountain, Waves, Building2, Palette, Camera, ArrowRight, MapPin, Clock, Users, Star } from 'lucide-react'
+import { chikmangaloreImages } from '@/lib/image-config'
 
 const experiences = [
   {
     id: 'coffee-tour',
     title: 'Coffee Plantation Tour',
-    subtitle: 'Experience the Aroma of Chikmagalur',
+    subtitle: 'Experience the Aroma of Chikmangalore',
     description: 'Walk through lush coffee estates, learn about the traditional Indian coffee-making process, and taste fresh filter coffee. Meet local planters and enjoy the greenery.',
     icon: Mountain,
-    image: 'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=800&h=600&fit=crop',
+    image: chikmangaloreImages.coffeePlantations,
     features: ['Estate Walk', 'Coffee Tasting', 'Meet Planters', 'Kannada Hospitality'],
-    color: 'from-green-600 to-green-400',
+    color: 'from-green-600 to-green-400'
   },
   {
     id: 'trekking',
@@ -21,9 +23,9 @@ const experiences = [
     subtitle: 'Explore the Western Ghats',
     description: 'Trek to Mullayanagiri, Baba Budangiri, and Kudremukh. Enjoy the monsoon mists, wildflowers, and the thrill of the Ghats. Local guides available.',
     icon: Waves,
-    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop',
+    image: chikmangaloreImages.mullayanagiri,
     features: ['Guided Treks', 'Monsoon Views', 'Wildflowers', 'Local Guides'],
-    color: 'from-blue-500 to-green-500',
+    color: 'from-blue-500 to-green-500'
   },
   {
     id: 'waterfalls',
@@ -31,9 +33,9 @@ const experiences = [
     subtitle: 'Discover Hidden Falls',
     description: 'Visit Hebbe Falls, Jhari Falls, and Shanti Falls. Enjoy a refreshing dip and picnic with local snacks like Maddur vada and filter coffee.',
     icon: Building2,
-    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&h=600&fit=crop',
+    image: chikmangaloreImages.hebbeFalls,
     features: ['Waterfall Visits', 'Swimming', 'Picnic', 'Local Snacks'],
-    color: 'from-blue-400 to-blue-600',
+    color: 'from-blue-400 to-blue-600'
   },
   {
     id: 'temple-tour',
@@ -41,7 +43,7 @@ const experiences = [
     subtitle: 'Spiritual Journey',
     description: 'Explore ancient temples like Sringeri Sharada Peetha, Horanadu Annapoorneshwari, and Kalasa. Experience Karnataka\'s spiritual heritage and architecture.',
     icon: Palette,
-    image: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?w=800&h=600&fit=crop',
+    image: chikmangaloreImages.temple,
     features: ['Temple Visits', 'Kannada Culture', 'Peaceful Surroundings', 'Architecture'],
     color: 'from-yellow-500 to-orange-400'
   }

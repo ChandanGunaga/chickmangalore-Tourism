@@ -1,40 +1,42 @@
 import type { Metadata } from 'next'
-import { Playfair_Display } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { chikmangaloreImages } from '@/lib/image-config'
 
-
-const playfair = Playfair_Display({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Chikmangalore Tourism - Explore the Coffee Land of Karnataka',
-  description: 'Discover the best of Chikmangalore: coffee estates, hills, waterfalls, and unique experiences. Plan your perfect getaway to the heart of Karnataka.',
-  keywords: 'chikmangalore, tourism, karnataka, coffee, hills, waterfalls, trekking, nature, travel',
+  title: 'Chikmangalore Tourism - Experience the Coffee Land of Karnataka',
+  description: 'Discover the beauty of Chikmangalore, Karnataka\'s coffee capital. Explore Mullayanagiri Peak, Hebbe Falls, coffee plantations, and ancient temples. Plan your perfect getaway to the Western Ghats.',
+  keywords: 'Chikmangalore, Karnataka, Coffee Plantations, Mullayanagiri, Hebbe Falls, Western Ghats, Tourism, Trekking, Wildlife',
   authors: [{ name: 'Chikmangalore Tourism' }],
   creator: 'Chikmangalore Tourism',
   publisher: 'Chikmangalore Tourism',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://chikmangaloretourism.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'Chikmangalore Tourism - Explore the Coffee Land of Karnataka',
-    description: 'Discover the best of Chikmangalore: coffee estates, hills, waterfalls, and unique experiences.',
+    title: 'Chikmangalore Tourism - Experience the Coffee Land of Karnataka',
+    description: 'Discover the beauty of Chikmangalore, Karnataka\'s coffee capital. Explore Mullayanagiri Peak, Hebbe Falls, coffee plantations, and ancient temples.',
     url: 'https://chikmangaloretourism.com',
     siteName: 'Chikmangalore Tourism',
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&h=630',
-        width: 1200,
-        height: 630,
-        alt: 'Chikmangalore hills and coffee estates',
-      },
-    ],
+    images: [chikmangaloreImages.mullayanagiri],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chikmangalore Tourism - Explore the Coffee Land of Karnataka',
-    description: 'Discover the best of Chikmangalore: coffee estates, hills, waterfalls, and unique experiences.',
-    images: ['https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&h=630'],
+    title: 'Chikmangalore Tourism - Experience the Coffee Land of Karnataka',
+    description: 'Discover the beauty of Chikmangalore, Karnataka\'s coffee capital. Explore Mullayanagiri Peak, Hebbe Falls, coffee plantations, and ancient temples.',
+    images: [chikmangaloreImages.mullayanagiri],
   },
   robots: {
     index: true,
@@ -47,6 +49,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'your-google-verification-code',
+  },
 }
 
 export default function RootLayout({
@@ -56,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${playfair.className} antialiased`}>
+      <body className={`${inter.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

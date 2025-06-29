@@ -1,82 +1,83 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { Instagram, X, ChevronLeft, ChevronRight, Heart, Share, Download } from 'lucide-react'
+import { chikmangaloreImages, getRandomImages } from '@/lib/image-config'
 
 const galleryImages = [
   {
     id: 1,
-    url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=800&fit=crop',
-    caption: 'Mullayanagiri Peak at sunrise, Western Ghats',
-    location: 'Chikmagalur, Karnataka',
-    category: 'nature',
+    url: chikmangaloreImages.coffeePlantations,
+    title: 'Coffee Plantations',
+    description: 'Lush green coffee estates of Chikmangalore',
+    category: 'coffee',
     likes: 1247
   },
   {
     id: 2,
-    url: 'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=800&h=800&fit=crop',
-    caption: 'Coffee plantations in the morning mist',
-    location: 'Baba Budangiri, Karnataka',
-    category: 'coffee',
+    url: chikmangaloreImages.hebbeFalls,
+    title: 'Hebbe Falls',
+    description: 'Majestic waterfall in the Western Ghats',
+    category: 'waterfall',
     likes: 2156
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&h=800&fit=crop',
-    caption: 'Hebbe Falls in full flow',
-    location: 'Kemmangundi, Karnataka',
-    category: 'waterfall',
+    url: chikmangaloreImages.mullayanagiri,
+    title: 'Mullayanagiri Peak',
+    description: 'Highest peak in Karnataka',
+    category: 'nature',
     likes: 1834
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&h=800&fit=crop',
-    caption: 'Serene Hirekolale Lake',
-    location: 'Chikmagalur, Karnataka',
-    category: 'lake',
+    url: chikmangaloreImages.kudremukhPeak,
+    title: 'Kudremukh Peak',
+    description: 'Horse face shaped mountain peak',
+    category: 'nature',
     likes: 1567
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?w=800&h=800&fit=crop',
-    caption: 'Wildlife at Bhadra Sanctuary',
-    location: 'Lakkavalli, Karnataka',
-    category: 'wildlife',
+    url: chikmangaloreImages.temple,
+    title: 'Ancient Temples',
+    description: 'Spiritual heritage of the region',
+    category: 'culture',
     likes: 2245
   },
   {
     id: 6,
-    url: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&h=800&fit=crop',
-    caption: 'Coffee Museum exhibits',
-    location: 'Chikmagalur, Karnataka',
-    category: 'culture',
+    url: chikmangaloreImages.bhadraWildlife,
+    title: 'Bhadra Wildlife',
+    description: 'Rich biodiversity and wildlife',
+    category: 'wildlife',
     likes: 3167
   },
   {
     id: 7,
-    url: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&h=800&fit=crop',
-    caption: 'Jhari Falls hidden in the forest',
-    location: 'Chikmagalur, Karnataka',
-    category: 'waterfall',
+    url: chikmangaloreImages.zPoint,
+    title: 'Z Point',
+    description: 'Scenic viewpoint and trekking destination',
+    category: 'nature',
     likes: 2834
   },
   {
     id: 8,
-    url: 'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=800&h=800&fit=crop',
-    caption: 'Coffee beans drying in the sun',
-    location: 'Chikmagalur, Karnataka',
-    category: 'coffee',
+    url: chikmangaloreImages.shriShankara,
+    title: 'Shri Shankara Matha',
+    description: 'Ancient spiritual center',
+    category: 'culture',
     likes: 1456
   },
   {
     id: 9,
-    url: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?w=800&h=800&fit=crop',
-    caption: 'Temple architecture in Chikmagalur',
-    location: 'Chikmagalur, Karnataka',
-    category: 'culture',
+    url: chikmangaloreImages.coffeeBeans,
+    title: 'Coffee Beans',
+    description: 'Aromatic coffee beans from local estates',
+    category: 'coffee',
     likes: 4123
-  }
+  },
 ]
 
 const categories = ['all', 'landscape', 'beach', 'culture']
@@ -164,7 +165,7 @@ export function GallerySection() {
             >
               <Image
                 src={image.url}
-                alt={image.caption}
+                alt={image.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -174,8 +175,8 @@ export function GallerySection() {
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <p className="font-semibold mb-1">{image.caption}</p>
-                <p className="text-sm text-white/80 mb-3">{image.location}</p>
+                <p className="font-semibold mb-1">{image.title}</p>
+                <p className="text-sm text-white/80 mb-3">{image.description}</p>
                 
                 <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
@@ -265,7 +266,7 @@ export function GallerySection() {
             <div className="relative">
               <Image
                 src={filteredImages[lightboxImage].url}
-                alt={filteredImages[lightboxImage].caption}
+                alt={filteredImages[lightboxImage].title}
                 width={800}
                 height={800}
                 className="max-h-[80vh] w-auto object-contain rounded-lg"
@@ -274,10 +275,10 @@ export function GallerySection() {
               {/* Image Info */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white rounded-b-lg">
                 <h3 className="text-xl font-semibold mb-1">
-                  {filteredImages[lightboxImage].caption}
+                  {filteredImages[lightboxImage].title}
                 </h3>
                 <p className="text-white/80">
-                  {filteredImages[lightboxImage].location}
+                  {filteredImages[lightboxImage].description}
                 </p>
                 
                 <div className="flex items-center space-x-4 mt-4">

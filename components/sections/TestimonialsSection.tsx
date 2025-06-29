@@ -1,76 +1,60 @@
 'use client'
 
+import React from 'react'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Star, Quote, ChevronLeft, ChevronRight, MessageSquare } from 'lucide-react'
+import { chikmangaloreImages } from '@/lib/image-config'
 
 const testimonials = [
   {
     id: 1,
-    name: 'Amit Sharma',
-    location: 'Bengaluru, Karnataka',
+    name: 'Rajesh Kumar',
+    role: 'Adventure Enthusiast',
+    content: 'The trek to Mullayanagiri Peak was absolutely breathtaking! The views from the top were worth every step. The local guides were knowledgeable and the experience was unforgettable.',
     rating: 5,
-    text: "The trek to Mullayanagiri was unforgettable! The views were breathtaking and the filter coffee at the top was the best I've ever had. Karnataka is beautiful!",
-    image: 'https://randomuser.me/api/portraits/men/33.jpg',
-    trip: 'Mullayanagiri Trek',
-    date: 'March 2024',
-    verified: true
+    image: chikmangaloreImages.profile1,
   },
   {
     id: 2,
-    name: 'Sneha Rao',
-    location: 'Mysuru, Karnataka',
+    name: 'Priya Sharma',
+    role: 'Nature Lover',
+    content: 'Hebbe Falls is a hidden gem! The cascading water surrounded by lush greenery created a magical atmosphere. Perfect for photography and peaceful meditation.',
     rating: 5,
-    text: 'We loved the coffee plantation tour. Our guide explained everything in Kannada and the fresh filter coffee was amazing!',
-    image: 'https://randomuser.me/api/portraits/women/49.jpg',
-    trip: 'Coffee Estate Tour',
-    date: 'February 2024',
-    verified: true
+    image: chikmangaloreImages.profile2,
   },
   {
     id: 3,
-    name: 'Rakesh Patil',
-    location: 'Hubballi, Karnataka',
+    name: 'Amit Patel',
+    role: 'Coffee Connoisseur',
+    content: 'The coffee plantation tour was an eye-opener. Learning about the coffee-making process while surrounded by aromatic coffee plants was a unique experience.',
     rating: 5,
-    text: 'Hebbe Falls is a hidden gem! The trek was fun, the waterfall was so refreshing, and we enjoyed local snacks like Maddur vada.',
-    image: 'https://randomuser.me/api/portraits/men/50.jpg',
-    trip: 'Hebbe Falls Adventure',
-    date: 'January 2024',
-    verified: true
+    image: chikmangaloreImages.profile3,
   },
   {
     id: 4,
-    name: 'Lakshmi Hegde',
-    location: 'Udupi, Karnataka',
+    name: 'Sneha Reddy',
+    role: 'Cultural Explorer',
+    content: 'The ancient temples and spiritual sites in Chikmangalore have a serene energy. The Shri Shankara Matha was particularly peaceful and architecturally stunning.',
     rating: 5,
-    text: 'Bhadra Wildlife Sanctuary is a paradise for nature lovers. We spotted elephants, peacocks, and so many birds! Karnataka is truly incredible.',
-    image: 'https://randomuser.me/api/portraits/women/51.jpg',
-    trip: 'Bhadra Safari',
-    date: 'December 2023',
-    verified: true
+    image: chikmangaloreImages.profile4,
   },
   {
     id: 5,
-    name: 'Vikram Gowda',
-    location: 'Mangaluru, Karnataka',
+    name: 'Vikram Singh',
+    role: 'Wildlife Photographer',
+    content: 'Bhadra Wildlife Sanctuary offered incredible opportunities for wildlife photography. The diverse flora and fauna made every moment exciting and rewarding.',
     rating: 5,
-    text: 'Hirekolale Lake at sunset was magical. We enjoyed a peaceful evening with family and some hot chai by the lake.',
-    image: 'https://randomuser.me/api/portraits/men/52.jpg',
-    trip: 'Hirekolale Lake Visit',
-    date: 'November 2023',
-    verified: true
+    image: chikmangaloreImages.profile5,
   },
   {
     id: 6,
-    name: 'Divya Shetty',
-    location: 'Chikmagalur, Karnataka',
+    name: 'Anjali Desai',
+    role: 'Travel Blogger',
+    content: 'Chikmangalore exceeded all my expectations! From the misty mountains to the aromatic coffee estates, every experience was authentic and memorable.',
     rating: 5,
-    text: 'The temple tour was so peaceful and enlightening. The architecture and rituals in Kannada temples are beautiful. Highly recommend for anyone seeking spiritual solace.',
-    image: 'https://randomuser.me/api/portraits/women/52.jpg',
-    trip: 'Temple Tour',
-    date: 'October 2023',
-    verified: true
-  }
+    image: chikmangaloreImages.profile6,
+  },
 ]
 
 export function TestimonialsSection() {
@@ -157,7 +141,7 @@ export function TestimonialsSection() {
 
               {/* Testimonial Text */}
               <blockquote className="text-2xl md:text-3xl font-medium text-gray-900 mb-8 leading-relaxed">
-                "{testimonials[currentTestimonial].text}"
+                "{testimonials[currentTestimonial].content}"
               </blockquote>
 
               {/* Author Info */}
@@ -170,13 +154,6 @@ export function TestimonialsSection() {
                     height={80}
                     className="rounded-full border-4 border-white shadow-lg"
                   />
-                  {testimonials[currentTestimonial].verified && (
-                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center border-2 border-white">
-                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                  )}
                 </div>
                 
                 <div className="text-center md:text-left">
@@ -184,17 +161,8 @@ export function TestimonialsSection() {
                     {testimonials[currentTestimonial].name}
                   </h4>
                   <p className="text-gray-600">
-                    {testimonials[currentTestimonial].location}
+                    {testimonials[currentTestimonial].role}
                   </p>
-                  <div className="flex items-center justify-center md:justify-start space-x-4 mt-2">
-                    <p className="text-sm text-primary-600 font-semibold">
-                      {testimonials[currentTestimonial].trip}
-                    </p>
-                    <span className="text-gray-400">•</span>
-                    <p className="text-sm text-gray-500">
-                      {testimonials[currentTestimonial].date}
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -252,7 +220,7 @@ export function TestimonialsSection() {
 
               {/* Text */}
               <p className="text-gray-700 mb-4 line-clamp-3">
-                "{testimonial.text}"
+                "{testimonial.content}"
               </p>
 
               {/* Author */}
@@ -269,7 +237,7 @@ export function TestimonialsSection() {
                     {testimonial.name}
                   </p>
                   <p className="text-gray-600 text-xs">
-                    {testimonial.location}
+                    {testimonial.role}
                   </p>
                 </div>
               </div>
