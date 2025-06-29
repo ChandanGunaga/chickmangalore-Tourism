@@ -5,6 +5,11 @@ import { chikmangaloreImages } from '@/lib/image-config';
 
 const heroImages = [
   {
+    url: chikmangaloreImages.coffeeBeans,
+    title: 'Hebbe Falls',
+    subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
+  },
+  {
     url: chikmangaloreImages.coffeePlantations,
     title: 'Coffee Plantations',
     subtitle: 'Walk through lush coffee estates and experience the aroma of Chikmangalore.'
@@ -30,11 +35,7 @@ const heroImages = [
     title: 'Hebbe Falls',
     subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
   },
-  {
-    url: chikmangaloreImages.coffeeBeans,
-    title: 'Hebbe Falls',
-    subtitle: 'Marvel at the beauty of cascading waterfalls in the heart of nature.'
-  },
+
 ];
 
 const destinations = [
