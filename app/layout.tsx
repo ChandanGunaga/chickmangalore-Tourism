@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Playfair_Display } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import { chikmangaloreImages } from '@/lib/image-config'
 
-const inter = Inter({ subsets: ['latin'] })
+
+const playfair = Playfair_Display({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Chikmangalore Tourism - Experience the Coffee Land of Karnataka',
@@ -61,7 +62,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${playfair.className} antialiased`}>
         <Navbar />
         <main>{children}</main>
         <Footer />
