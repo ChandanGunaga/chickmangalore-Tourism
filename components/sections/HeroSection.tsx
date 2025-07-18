@@ -243,7 +243,7 @@ function HeroSection() {
             href="https://pgbiz.omniware.in/chikkamagalurutourism" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full font-bold text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
+            className="inline-flex items-center justify-center bg-white text-black px-10 py-4 rounded-full font-bold text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
           >
             <span className="mr-3 text-2xl">🏔️</span>
             Mullayanagiri Online Booking Portal
