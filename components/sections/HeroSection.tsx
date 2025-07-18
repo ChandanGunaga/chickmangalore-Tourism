@@ -42,57 +42,75 @@ const destinations = [
   {
     url: chikmangaloreImages.shriShankara,
     title: 'Shri Shankara Matha',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Spiritual heritage site',
+    description: 'Ancient temple complex with rich cultural significance'
   },
   {
     url: chikmangaloreImages.kudremukhPeak,
     title: 'Kudremukh Peak',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Horse face mountain',
+    description: 'Famous for its unique horse-face shape and trekking trails'
   },
   {
     url: chikmangaloreImages.kudremukhPark,
     title: 'Kudremukh National Park',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Biodiversity hotspot',
+    description: 'UNESCO World Heritage site with diverse wildlife'
   },
   {
     url: chikmangaloreImages.bhadraWildlife,
     title: 'Bhadra Wildlife Sanctuary',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Wildlife paradise',
+    description: 'Home to tigers, leopards, and diverse bird species'
   },
   {
     url: chikmangaloreImages.kalasaWaterfalls,
     title: 'Kalasa Waterfalls',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Cascading beauty',
+    description: 'Pristine waterfalls surrounded by lush greenery'
   },
-  
   {
     url: chikmangaloreImages.babaBudangiri,
     title: 'Baba Budangiri',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Sacred mountain',
+    description: 'Sacred site with Dattatreya Peetha and stunning views'
   },
   {
     url: chikmangaloreImages.mullayanagiri,
     title: 'Mullayanagiri Peak',
-    subtitle: 'Highest peak in Karnataka'
+    subtitle: 'Highest peak in Karnataka',
+    description: '6,330 ft peak offering panoramic Western Ghats views'
   },
   {
     url: chikmangaloreImages.hebbeFallsDest,
     title: 'Hebbe Falls',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Twin waterfalls',
+    description: 'Spectacular twin waterfalls in dense forest'
   },
   {
     url: chikmangaloreImages.coffeeEstates,
     title: 'Coffee Estates',
-    subtitle: 'Aromatic coffee plantations'
+    subtitle: 'Aromatic plantations',
+    description: 'World-famous coffee estates with guided tours'
   },
   {
     url: chikmangaloreImages.zPoint,
     title: 'Z Point',
-    subtitle: 'Breathtaking waterfalls'
+    subtitle: 'Adventure viewpoint',
+    description: 'Popular trekking destination with valley views'
   },
-  
-
-  
+  {
+    url: 'https://bynekaadu.com/wp-content/uploads/2024/05/Manikyadhara-Falls-Timings-and-Entry-Fee.jpg',
+    title: 'Manikyadhara Falls',
+    subtitle: 'Sacred waterfall',
+    description: 'Sacred waterfall near Baba Budangiri'
+  },
+  {
+    url: 'https://chikmagalurtourism.org.in/images/places-to-visit/headers/kemmangundi-chikmagalur-entry-fee-timings-holidays-reviews-header.jpg',
+    title: 'Kemmanagundi',
+    subtitle: 'Queen of hills',
+    description: 'Former summer retreat of Mysore Maharajas'
+  }
 ];
 
 const trailCategories = [
@@ -122,6 +140,7 @@ const trailCategories = [
     title: 'Hill Stations',
     description: 'Cool climate and scenic beauty'
   },
+  
 ];
 
 const accommodations = [
@@ -203,11 +222,11 @@ function HeroSection() {
           Chikmangalore Tourism
         </h1>
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto drop-shadow-md">
-          Discover the coffee capital of Karnataka with its pristine hills, cascading waterfalls, and rich cultural heritage.
+        <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto drop-shadow-md">
+          Discover the coffee capital of Karnataka with its pristine hills, cascading waterfalls, thrilling trekking adventures, exciting river rafting experiences, and rich cultural heritage.
         </p>
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
+        {/* <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center">
           <button className="bg-white/90 text-gray-900 px-8 py-3 rounded-full font-semibold flex items-center space-x-2 text-lg shadow hover:bg-white transition-all border border-white/80">
             <Search className="h-5 w-5" />
             <span>Explore Destinations</span>
@@ -216,6 +235,20 @@ function HeroSection() {
             <Play className="h-5 w-5" />
             <span>Watch Experience</span>
           </button>
+        </div> */}
+        
+        {/* Mullayanagiri Booking Portal - Prominent Button */}
+        <div className="mb-8">
+          <a 
+            href="https://pgbiz.omniware.in/chikkamagalurutourism" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-full font-bold text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
+          >
+            <span className="mr-3 text-2xl">🏔️</span>
+            Mullayanagiri Online Booking Portal
+            <span className="ml-3">→</span>
+          </a>
         </div>
       </div>
       {/* Image Indicators */}
@@ -864,6 +897,20 @@ function ExploreSection() {
                     <ArrowRight className="h-6 w-6 text-white" />
                   </button>
                 </div>
+                
+                {/* Mullayanagiri Booking Portal Button */}
+                <div className="mt-6">
+                  <a 
+                    href="https://pgbiz.omniware.in/chikkamagalurutourism" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-white/30"
+                  >
+                    <span className="mr-2">🏔️</span>
+                    Mullayanagiri Online Booking Portal
+                    <span className="ml-2">→</span>
+                  </a>
+                </div>
               </div>
             </div>
             
@@ -969,6 +1016,426 @@ function ExploreSection() {
   );
 }
 
+function TourismCategoriesSection() {
+  const [activeCategory, setActiveCategory] = useState('agritourism');
+  
+  const categories = [
+    {
+      id: 'trekking',
+      title: 'Trekking Adventures',
+      subtitle: 'Peaks & Trails',
+      icon: '🏔️',
+      color: 'from-orange-500 to-red-600',
+      description: 'Conquer the highest peaks and explore scenic trails',
+      mainImage: chikmangaloreImages.zPoint,
+      images: [
+        chikmangaloreImages.kudremukhPeak,
+        chikmangaloreImages.babaBudangiri,
+        chikmangaloreImages.zPoint
+      ],
+      features: [
+        'Mullayanagiri Peak Trek',
+        'Kudremukh National Park',
+        'Baba Budangiri Hills',
+        'Z Point Adventure',
+        'Sunrise Trekking'
+      ],
+      duration: '1-3 Days',
+      price: '₹1,500 - ₹5,000'
+    },
+    {
+      id: 'agritourism',
+      title: 'Agritourism',
+      subtitle: 'Farm Life & Coffee',
+      icon: '🌾',
+      color: 'from-green-500 to-emerald-600',
+      description: 'Experience authentic farm life and coffee plantations',
+      mainImage: chikmangaloreImages.kudremukhPeak,
+      images: [
+        chikmangaloreImages.agritourism1,
+        chikmangaloreImages.agritourism2,
+        chikmangaloreImages.agritourism3
+      ],
+      features: [
+        'Coffee Plantation Tours',
+        'Organic Farming Experience',
+        'Farm-to-Table Dining',
+        'Traditional Farming Methods',
+        'Seasonal Harvest Activities'
+      ],
+      duration: '2-5 Days',
+      price: '₹2,000 - ₹8,000'
+    },
+    {
+      id: 'wellness',
+      title: 'Wellness Tourism',
+      subtitle: 'Mind, Body & Soul',
+      icon: '🧘',
+      color: 'from-purple-500 to-indigo-600',
+      description: 'Rejuvenate your mind, body, and soul in nature\'s lap',
+      mainImage: chikmangaloreImages.wellness1,
+      images: [
+        chikmangaloreImages.wellness1,
+        chikmangaloreImages.wellness2,
+        chikmangaloreImages.wellness3
+      ],
+      features: [
+        'Yoga & Meditation Retreats',
+        'Ayurvedic Wellness Centers',
+        'Nature Therapy Sessions',
+        'Spa & Wellness Resorts',
+        'Mindfulness Workshops'
+      ],
+      duration: '3-7 Days',
+      price: '₹5,000 - ₹15,000'
+    },
+    
+    {
+      id: 'watersports',
+      title: 'Water Sports',
+      subtitle: 'Rivers & Rapids',
+      icon: '🚣',
+      color: 'from-blue-500 to-cyan-600',
+      description: 'Thrilling water adventures in pristine rivers and waterfalls',
+      mainImage: chikmangaloreImages.waterSports1,
+      images: [
+        chikmangaloreImages.waterSports1,
+        chikmangaloreImages.waterSports2,
+        chikmangaloreImages.waterSports3
+      ],
+      features: [
+        'River Rafting Expeditions',
+        'Waterfall Rappelling',
+        'Kayaking Adventures',
+        'Swimming in Natural Pools',
+        'Water Photography Tours'
+      ],
+      duration: '1-2 Days',
+      price: '₹3,000 - ₹8,000'
+    }
+  ];
+
+  const currentCategory = categories.find(cat => cat.id === activeCategory);
+
+  return (
+    <section className="py-24 relative overflow-hidden">
+      {/* Dynamic Background */}
+      <div className="absolute inset-0">
+        <img
+          src={currentCategory?.mainImage}
+          alt="Background"
+          className="w-full h-full object-cover transition-all duration-1000"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/50"></div>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
+            <span>🌟</span>
+            <span>Diverse Tourism Experiences</span>
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+            Tourism Categories
+          </h2>
+          <p className="text-2xl md:text-3xl font-light text-white/90 mb-4">
+            Explore Chikmangalore's Rich Diversity
+          </p>
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+            From peaceful agritourism experiences to thrilling adventure sports, discover the perfect way to experience Chikmangalore.
+          </p>
+          <div className="w-24 h-1 bg-white mx-auto rounded-full mt-6"></div>
+        </div>
+
+        <div className="w-full flex justify-center mb-12">
+          <div className="w-full max-w-2xl aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+            <iframe
+              src="https://www.youtube.com/embed/pOI4WajPmqE"
+              title="Chikmagalur Tourism Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left Side - Image Gallery */}
+          <div className="space-y-6">
+            {/* Main Large Image */}
+            <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src={currentCategory?.mainImage}
+                alt={currentCategory?.title}
+                className="w-full h-full object-cover transition-all duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              
+              {/* Category Badge */}
+              <div className="absolute top-6 left-6">
+                <div className={`inline-flex items-center space-x-2 bg-gradient-to-r ${currentCategory?.color} text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg`}>
+                  <span className="text-lg">{currentCategory?.icon}</span>
+                  <span>{currentCategory?.title}</span>
+                </div>
+              </div>
+              
+              {/* Overlay Content */}
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-3xl font-bold text-white mb-2">{currentCategory?.title}</h3>
+                <p className="text-white/90 text-lg">{currentCategory?.subtitle}</p>
+                <p className="text-white/80 text-sm mt-2">{currentCategory?.description}</p>
+              </div>
+            </div>
+
+            {/* Image Grid */}
+            <div className="grid grid-cols-3 gap-4">
+              {currentCategory?.images.map((image, index) => (
+                <div key={index} className="relative h-32 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
+                  <img
+                    src={image}
+                    alt={`${currentCategory?.title} ${index + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300"></div>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
+                      <span className="text-white text-lg">🔍</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Quick Info Cards */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 border border-white/30">
+                <div className="text-white/60 text-sm mb-1">Duration</div>
+                <div className="text-white font-bold text-lg">{currentCategory?.duration}</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-4 border border-white/30">
+                <div className="text-white/60 text-sm mb-1">Price Range</div>
+                <div className="text-white font-bold text-lg">{currentCategory?.price}</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side - Category Navigation & Details */}
+          <div className="space-y-6">
+            {/* Category Navigation */}
+            <div className="bg-white/20 backdrop-blur-xl rounded-3xl p-6 border border-white/30">
+              <h3 className="text-2xl font-bold text-white mb-6">Choose Your Experience</h3>
+              
+              <div className="space-y-4">
+                {categories.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => setActiveCategory(category.id)}
+                    className={`w-full p-4 rounded-2xl transition-all duration-500 transform hover:scale-105 group ${
+                      activeCategory === category.id
+                        ? `bg-gradient-to-r ${category.color} text-white shadow-xl`
+                        : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 border border-white/20'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-4">
+                      <div className={`text-2xl transition-transform duration-300 group-hover:rotate-12 ${activeCategory === category.id ? 'text-white' : 'text-white/80'}`}>
+                        {category.icon}
+                      </div>
+                      <div className="text-left flex-1">
+                        <h4 className={`font-bold text-lg mb-1 ${activeCategory === category.id ? 'text-white' : 'text-white'}`}>
+                          {category.title}
+                        </h4>
+                        <p className={`text-sm ${activeCategory === category.id ? 'text-white/90' : 'text-white/70'}`}>
+                          {category.subtitle}
+                        </p>
+                      </div>
+                      <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        activeCategory === category.id ? 'bg-white scale-150' : 'bg-white/50'
+                      }`}></div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Features List */}
+            <div className="bg-white/20 backdrop-blur-xl rounded-3xl p-6 border border-white/30">
+              <h4 className="text-xl font-bold text-white mb-4">What's Included</h4>
+              <div className="space-y-3">
+                {currentCategory?.features.map((feature, index) => (
+                  <div 
+                    key={index} 
+                    className="flex items-center space-x-3 bg-white/20 backdrop-blur-sm rounded-xl p-3 border border-white/20 hover:bg-white/30 transition-all duration-300"
+                  >
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white font-medium text-sm">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex flex-col gap-4">
+              <button className={`w-full py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r ${currentCategory?.color} text-white shadow-lg hover:shadow-xl`}>
+                Explore {currentCategory?.title}
+              </button>
+              <button className="w-full py-4 px-6 rounded-2xl font-semibold text-lg bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-all duration-300 border border-white/30">
+                Book Experience
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Stats */}
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+          {[
+            { icon: '🌾', label: 'Agritourism Sites', value: '25+', color: 'text-green-400' },
+            { icon: '🧘', label: 'Wellness Centers', value: '15+', color: 'text-purple-400' },
+            { icon: '🏔️', label: 'Trekking Trails', value: '30+', color: 'text-orange-400' },
+            { icon: '🚣', label: 'Water Sports', value: '10+', color: 'text-blue-400' }
+          ].map((stat, index) => (
+            <div key={index} className="text-center group cursor-pointer">
+              <div className={`text-4xl mb-2 group-hover:scale-110 transition-transform duration-300 ${stat.color}`}>
+                {stat.icon}
+              </div>
+              <div className="text-2xl font-bold text-white mb-1 group-hover:scale-105 transition-transform duration-300">{stat.value}</div>
+              <div className="text-white/80 text-sm group-hover:text-white transition-colors duration-300">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TravelTipsSection() {
+  const seasons = [
+    {
+      name: 'Monsoon (June-September)',
+      description: 'Best for waterfalls and lush greenery',
+      temperature: '18-25°C',
+      activities: ['Waterfall visits', 'Coffee plantation tours', 'Nature photography'],
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      color: 'from-blue-500 to-cyan-600'
+    },
+    {
+      name: 'Winter (October-February)',
+      description: 'Perfect for trekking and outdoor activities',
+      temperature: '15-28°C',
+      activities: ['Trekking', 'Wildlife safaris', 'Sunrise views'],
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      color: 'from-orange-500 to-red-600'
+    },
+    {
+      name: 'Summer (March-May)',
+      description: 'Ideal for coffee tours and cultural experiences',
+      temperature: '20-35°C',
+      activities: ['Coffee processing tours', 'Temple visits', 'Local cuisine'],
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      color: 'from-green-500 to-emerald-600'
+    }
+  ];
+
+  const travelTips = [
+    { icon: '🚗', title: 'Transportation', tip: 'Hire a local guide for trekking and remote areas' },
+    { icon: '🏨', title: 'Accommodation', tip: 'Book homestays for authentic local experience' },
+    { icon: '🍽️', title: 'Food', tip: 'Try local Malnad cuisine and filter coffee' },
+    { icon: '📱', title: 'Connectivity', tip: 'Carry cash as ATMs may be limited in remote areas' },
+    { icon: '🌧️', title: 'Weather', tip: 'Carry rain gear during monsoon season' },
+    { icon: '📸', title: 'Photography', tip: 'Best light for photography is early morning and sunset' }
+  ];
+
+  return (
+    <section className="py-24 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+          alt="Travel Tips Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60"></div>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
+            <span>💡</span>
+            <span>Travel Guide</span>
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+            Travel Tips & Best Time to Visit
+          </h2>
+          <p className="text-2xl md:text-3xl font-light text-white/90 mb-4">
+            Plan Your Perfect Trip
+          </p>
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+            Discover the best seasons to visit, essential travel tips, and insider knowledge to make your Chikmangalore experience unforgettable.
+          </p>
+          <div className="w-24 h-1 bg-white mx-auto rounded-full mt-6"></div>
+        </div>
+
+        {/* Seasons Grid */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {seasons.map((season, index) => (
+            <div key={index} className="group bg-white/20 backdrop-blur-xl rounded-3xl overflow-hidden shadow-2xl border border-white/30 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={season.image}
+                  alt={season.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                {/* Temperature Badge */}
+                <div className="absolute top-4 right-4">
+                  <span className="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold border border-white/30">
+                    {season.temperature}
+                  </span>
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">{season.name}</h3>
+                <p className="text-white/80 text-sm mb-4">{season.description}</p>
+                
+                <div className="space-y-2">
+                  <h4 className="text-white font-semibold text-sm">Best Activities:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {season.activities.map((activity, idx) => (
+                      <span key={idx} className="bg-white/20 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs border border-white/30">
+                        {activity}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Travel Tips Grid */}
+        <div className="bg-white/20 backdrop-blur-xl rounded-3xl p-8 border border-white/30">
+          <h3 className="text-3xl font-bold text-white mb-8 text-center">Essential Travel Tips</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {travelTips.map((tip, index) => (
+              <div key={index} className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">{tip.icon}</div>
+                <h4 className="text-white font-semibold mb-2">{tip.title}</h4>
+                <p className="text-white/80 text-sm leading-relaxed">{tip.tip}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function TripPlannerSection() {
   return (
     <section className="py-20 relative">
@@ -990,6 +1457,141 @@ function TripPlannerSection() {
             <button className="inline-block text-orange-500 font-semibold border-b-2 border-orange-500 hover:text-orange-600 hover:border-orange-600 transition-colors">
               KNOW MORE
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LocalCuisineSection() {
+  const cuisineItems = [
+    {
+      name: 'Bisi Bele Bath',
+      description: 'Traditional rice dish with lentils and vegetables',
+      image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/bisi-bele-bath-recipe.jpg',
+      category: 'Traditional',
+      spiceLevel: 'Medium'
+    },
+    {
+      name: 'Mangalore Fish Curry',
+      description: 'Spicy coastal fish curry with coconut milk',
+      image: 'https://nigellarecipes.co.uk/wp-content/uploads/2024/11/Nigella-Fish-Curry%E2%80%8B%E2%80%8B-Recipe%E2%80%8B-1-1000x1024.png',
+      category: 'Seafood',
+      spiceLevel: 'Hot'
+    },
+    {
+      name: 'Coffee Filter Kaapi',
+      description: 'Traditional South Indian filter coffee',
+      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800',
+      category: 'Beverage',
+      spiceLevel: 'Mild'
+    },
+    {
+      name: 'Mangalore Buns',
+      description: 'Sweet banana bread served with chutney',
+      image: 'https://spicesandaromas.com/wp-content/uploads/2021/11/mangalore-buns-recipe.jpg',
+      category: 'Breakfast',
+      spiceLevel: 'Sweet'
+    },
+    {
+      name: 'Neer Dosa',
+      description: 'Soft rice crepes served with coconut chutney',
+      image: 'https://myfoodstory.com/wp-content/uploads/2022/07/Neer-Dosa-2.jpg',
+      category: 'Breakfast',
+      spiceLevel: 'Mild'
+    },
+    {
+      name: 'Kori Rotti',
+      description: 'Crispy rice wafers with chicken curry',
+      image: 'https://myfoodstory.com/wp-content/uploads/2015/11/chicken-kori-rotti-mangalorean-chicken-curry-recipe.1024x1024.jpg',
+      category: 'Traditional',
+      spiceLevel: 'Medium'
+    }
+  ];
+
+  return (
+    <section className="py-24 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200"
+          alt="Local Cuisine Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70"></div>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
+            <span>🍽️</span>
+            <span>Local Flavors</span>
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+            Local Cuisine & Culture
+          </h2>
+          <p className="text-2xl md:text-3xl font-light text-white/90 mb-4">
+            Taste the Authentic Flavors
+          </p>
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
+            Experience the rich culinary heritage of Chikmangalore with traditional Malnad cuisine, aromatic coffee, and warm hospitality.
+          </p>
+          <div className="w-24 h-1 bg-white mx-auto rounded-full mt-6"></div>
+        </div>
+
+        {/* Cuisine Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {cuisineItems.map((item, index) => (
+            <div key={index} className="group bg-white/20 backdrop-blur-xl rounded-3xl overflow-hidden shadow-2xl border border-white/30 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4">
+                  <span className="bg-white/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold border border-white/30">
+                    {item.category}
+                  </span>
+                </div>
+                
+                {/* Spice Level */}
+                <div className="absolute top-4 right-4">
+                  <span className="bg-orange-500/80 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {item.spiceLevel}
+                  </span>
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">{item.name}</h3>
+                <p className="text-white/80 text-sm leading-relaxed">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Cultural Highlights */}
+        <div className="bg-white/20 backdrop-blur-xl rounded-3xl p-8 border border-white/30">
+          <h3 className="text-3xl font-bold text-white mb-6 text-center">Cultural Highlights</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { icon: '🏺', title: 'Traditional Arts', desc: 'Yakshagana, folk dances' },
+              { icon: '🏛️', title: 'Heritage Sites', desc: 'Ancient temples & monuments' },
+              { icon: '🎭', title: 'Festivals', desc: 'Coffee festival, harvest celebrations' },
+              { icon: '👥', title: 'Local Communities', desc: 'Warm hospitality & traditions' }
+            ].map((item, index) => (
+              <div key={index} className="text-center group">
+                <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                <h4 className="text-white font-semibold mb-2">{item.title}</h4>
+                <p className="text-white/70 text-sm">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -1486,6 +2088,9 @@ export default function EnhancedHeroSection() {
       <HeroSection />
       <TrailsSection />
       <DestinationsSection />
+      <TourismCategoriesSection />
+      <LocalCuisineSection />
+      <TravelTipsSection />
       <FestivalsSection />
       <ExploreSection />
       <BusinessSection />

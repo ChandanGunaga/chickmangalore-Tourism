@@ -32,6 +32,39 @@ export const chikmangaloreImages = {
   profile4: 'https://images.unsplash.com/photo-1628497517516-af58a301f80d?w=150&h=150&fit=crop',
   profile5: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=150&h=150&fit=crop',
   profile6: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+
+
+  // agritourism images
+  agritourism1: 'https://static.wixstatic.com/media/94e1ae_1aad263166af4d7d95b2d1e05771f906~mv2.jpg/v1/fill/w_925,h_405,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/94e1ae_1aad263166af4d7d95b2d1e05771f906~mv2.jpg',
+  agritourism2: 'https://redscarabtravelandmedia.wordpress.com/wp-content/uploads/2013/09/tea-picking-at-makaibari-img_5279.jpg',
+  agritourism3: 'https://gos3.ibcdn.com/80cf6f34-36ba-4e1c-b058-9786ee1e431b.jpg',
+  agritourism4: 'https://media.istockphoto.com/id/2162674097/photo/woman-exploring-on-tea-plantation-in-sri-lanka.jpg?s=1024x1024&w=is&k=20&c=i7oUpAtbiQV6XduFyRebX6cNohAl2xVOjw3ogplHJLM=',
+  agritourism5: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=800&h=600&fit=crop',
+  agritourism6: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+
+  // wellness images
+  wellness1: 'https://lh3.googleusercontent.com/proxy/tCrS56dyUl9kKGYrK2K8-RndyrdIQ2D-V7ZR_2nc7MAMEzy4aj8d8n1qT4kgv_8pM8ZGEhl8qC9D2q-tw_LGWV53eUZeULG9kC-ruKzymv-_GtHx0cp6VOaybA1yZpd2YCIMaUvqHPB5nM3q0kt7NiP8m5lv3rg=s1360-w1360-h1020-rw',
+  wellness2: 'https://goapropertyguru.com/wp-content/uploads/2023/09/wellness-travel2.jpg',
+  wellness3: 'https://static.investindia.gov.in/s3fs-public/2021-08/shutterstock_1388470073.jpg',
+  wellness4: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+  wellness5: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=800&h=600&fit=crop',
+  wellness6: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+
+  // trekking images
+  trekking1: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=800&h=600&fit=crop',
+  trekking2: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+  trekking3: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=800&h=600&fit=crop',
+  trekking4: 'https://riverwoods.in/wp-content/uploads/2019/01/biking-adventure-activitys-chikmagalur.jpg',
+  trekking5: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=800&h=600&fit=crop',
+  trekking6: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+
+  //water sports images
+  waterSports1: 'https://riverwoods.in/wp-content/uploads/2019/01/adventure-activities-in-chikmangalur.jpg',
+  waterSports2: 'https://riverwoods.in/wp-content/uploads/2019/01/chikmagakur-river-rafting-riverwoods.jpg',
+  waterSports3: 'https://chikmagalurtourism.org.in/images/places-to-visit/headers/jhari-falls-chikmagalur-entry-fee-timings-holidays-reviews-header.jpg',
+  waterSports4: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
+  waterSports5: 'https://media.istockphoto.com/id/1222391134/photo/hindu-ancient-temple-with-breathtaking-stone-hand-art-work-for-spiritual-enlightenment.jpg?w=800&h=600&fit=crop',
+  waterSports6: 'https://cdn.pixabay.com/photo/2024/10/20/14/51/coffee-9135194_1280.jpg',
 };
 
 // Helper function to get random images for variety
