@@ -1318,7 +1318,7 @@ function TravelTipsSection() {
       description: 'Best for waterfalls and lush greenery',
       temperature: '18-25°C',
       activities: ['Waterfall visits', 'Coffee plantation tours', 'Nature photography'],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: chikmangaloreImages.hebbeFalls,
       color: 'from-blue-500 to-cyan-600'
     },
     {
@@ -1326,7 +1326,7 @@ function TravelTipsSection() {
       description: 'Perfect for trekking and outdoor activities',
       temperature: '15-28°C',
       activities: ['Trekking', 'Wildlife safaris', 'Sunrise views'],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: chikmangaloreImages.mullayanagiri,
       color: 'from-orange-500 to-red-600'
     },
     {
@@ -1334,7 +1334,7 @@ function TravelTipsSection() {
       description: 'Ideal for coffee tours and cultural experiences',
       temperature: '20-35°C',
       activities: ['Coffee processing tours', 'Temple visits', 'Local cuisine'],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      image: chikmangaloreImages.coffeePlantations,
       color: 'from-green-500 to-emerald-600'
     }
   ];
@@ -1353,7 +1353,7 @@ function TravelTipsSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200"
+          src={chikmangaloreImages.natureScenery}
           alt="Travel Tips Background"
           className="w-full h-full object-cover"
         />
