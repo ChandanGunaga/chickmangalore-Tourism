@@ -1474,7 +1474,7 @@ function LocalCuisineSection() {
       spiceLevel: 'Medium'
     },
     {
-      name: 'Mangalore Fish Curry',
+      name: 'Fish Curry',
       description: 'Spicy coastal fish curry with coconut milk',
       image: 'https://nigellarecipes.co.uk/wp-content/uploads/2024/11/Nigella-Fish-Curry%E2%80%8B%E2%80%8B-Recipe%E2%80%8B-1-1000x1024.png',
       category: 'Seafood',
